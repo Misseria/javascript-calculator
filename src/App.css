@@ -1,0 +1,68 @@
+:root{
+  --bc: rgb(255, 150, 255); /*bc=background-color*/
+  --fc: rgb(25, 25, 25); /*fc=font-color*/
+  --dc: rgb(255, 50, 255); /*dc=table-data-color*/
+  --pc: black; /*pc=page-color*/
+}
+
+.spacer{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--pc);
+}
+
+.spacer td{
+  padding: 0;
+}
+
+.filler{
+  width: 100%;
+  height: 20%;
+  font-size: 100px;
+}
+
+.main{
+  width: 28%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "digital-clock-font", monospace;
+  font-weight: bolder;
+}
+
+.main td{
+  background-color: var(--bc);
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.main th{
+  background-color: var(--fc);
+  text-align: right;
+}
+
+#display{
+  font-size: 2.5em;
+  color: white;
+  padding: 5% 0;
+}
+
+#display p{
+  word-wrap: break-word;
+}
+
+.main, .main th, .main td{
+  border: solid 3px var(--fc);
+}
+
+th{
+  height: 15%;
+}
+
+.main td:hover {
+  background-color: var(--dc);
+}
+
+.main td:active{
+  background-color: var(--fc);
+  color: var(--dc);
+}
